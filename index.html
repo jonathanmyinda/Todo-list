@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My ToDo List</h1>
+    <div id="form">
+        <input type="text" id="taskInput" placeholder="Entrez un Titre" value="">
+        <input type="text" id="taskDesc" placeholder="Entrez une description" value="">
+        <select name="priorité" id="taskPriorité">
+            <option value="">Priorité</option>
+            <option value="haute">Haute</option>
+            <option value="moyenne">Moyenne</option>
+            <option value="basse">Basse</option>
+        </select>
+        <button id="addTaskButton">Ajouter</button>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr class="taskHead">
+                    <th>#ID</th>
+                    <th>Titre</th>
+                    <th>Description</th>
+                    <th>Priorité</th>
+                    <th><button type="button">supprimer</button></th>
+                </tr>
+            </thead>
+            <tbody id="taskList"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
